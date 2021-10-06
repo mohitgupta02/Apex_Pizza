@@ -1,0 +1,113 @@
+
+/* fonts  */
+@font-face {
+    font-family:"Raleway-regular";
+    src:url(../fonts/Raleway-Regular.ttf)
+}
+@font-face {
+    font-family:"Raleway-medium";
+    src:url(../fonts/Raleway-Medium.ttf)
+}
+@font-face {
+    font-family:"Raleway-bold";
+    src:url(../fonts/Raleway-Bold.ttf)
+}
+@font-face {
+    font-family:"Raleway-extrabold";
+    src:url(../fonts/Raleway-ExtraBold.ttf)
+}
+@font-face {
+    font-family:"Raleway-semibold";
+    src:url(../fonts/Raleway-SemiBold.ttf)
+}
+@font-face {
+    font-family:"Raleway-black";
+    src:url(../fonts/Raleway-Black.ttf)
+}
+
+
+/* colors  */
+
+:root {
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+
+/* Reset  */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    font-family: "Raleway-regular";
+}
+.container {
+    width:100%;
+    padding:o 15px;
+    margin:0 auto;
+}
+.side-navbar{
+    width:15rem;
+    position: fixed;
+    left:0;
+    height:100vh;
+    color: var(--heaven);
+    background-color: var(--footer);
+    font-family: "Raleway-regular";
+    /* border:solid var(--primary); */
+}
+.admin-table{
+    /* height:; */
+    width:100%;
+    font-size: larger;
+}
+.admin-table tr{
+    height: 50px;
+}
+.admin-table tr:hover{
+    color:var(--secondary);
+    background-color: var(--heaven);
+    cursor: pointer;
+}
+.admin-table td{
+border-bottom:1px solid var(--heaven);
+}
+.site-content{
+    width:100%;
+    height:100%;
+    overflow-x:auto;
+}
+
+.topbar{
+    background:var(--secondary);
+    color:var(--pure);
+    font-family:"Raleway-semibold";
+    padding:0.75rem 0;
+    text-align: center;
+}
+.flex{
+    display:flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+  .items-center{
+      align-items: center;
+  }
+  .grid{
+      display: grid;
+    
+  }
+  .main{
+      position: absolute;
+      left:16rem;
+  }
